@@ -1,0 +1,1642 @@
+/* =========================
+   BASIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #171717;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATIE
+========================= */
+
+.navbar {
+    height: 72px;
+
+    background: rgba(205, 0, 0, 0.98);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    color: white;
+
+    font-size: 31px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    margin-right: 60px;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
+
+    gap: 5px;
+}
+
+.nav-links > a,
+.dropdown > button {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 18px;
+
+    color: white;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.nav-links > a:hover,
+.dropdown:hover > button,
+.nav-links > a.active {
+    background: rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown {
+    position: relative;
+
+    height: 100%;
+}
+
+.dropdown-menu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 72px;
+    left: 0;
+
+    width: 220px;
+
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    border-radius: 0 0 10px 10px;
+
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+
+    display: block;
+
+    padding: 16px 18px;
+
+    color: #222;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.dropdown-menu a:hover {
+
+    background: #f3f3f3;
+
+    color: #d00000;
+
+    padding-left: 24px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    height: 720px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(120, 0, 0, 0.82),
+            rgba(210, 0, 0, 0.38),
+            rgba(0, 0, 0, 0.65)
+        );
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 800px;
+
+    padding: 20px;
+}
+
+.psv-badge {
+
+    width: 105px;
+    height: 105px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #d00000;
+
+    font-size: 27px;
+
+    font-weight: 900;
+
+    border: 7px solid #d00000;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-small {
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+
+    font-size: clamp(50px, 8vw, 95px);
+
+    margin: 0;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+
+    text-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+
+    max-width: 600px;
+
+    margin: 25px auto 35px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #d00000;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    transition: 0.25s;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-button:hover {
+
+    transform: translateY(-4px);
+
+    background: #d00000;
+
+    color: white;
+}
+
+
+/* =========================
+   QUICK INFO
+========================= */
+
+.quick-info {
+
+    max-width: 1150px;
+
+    margin: -55px auto 80px;
+
+    position: relative;
+
+    z-index: 5;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 0 20px;
+}
+
+.quick-card {
+
+    background: white;
+
+    padding: 30px 25px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.16);
+
+    transition: 0.25s;
+
+    color: #171717;
+}
+
+.quick-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.quick-card span {
+
+    font-size: 32px;
+}
+
+.quick-card h3 {
+
+    margin: 15px 0 8px;
+
+    color: #d00000;
+
+    font-size: 20px;
+}
+
+.quick-card p {
+
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SECTIES
+========================= */
+
+.section {
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 80px 20px;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title p {
+
+    color: #d00000;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 8px;
+}
+
+.section-title h2 {
+
+    font-size: 45px;
+
+    margin: 0;
+
+    font-weight: 900;
+}
+
+
+/* =========================
+   WEDSTRIJD
+========================= */
+
+.match-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+
+    border-top: 6px solid #d00000;
+}
+
+.match-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 20px;
+}
+
+.teams {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 45px 20px;
+}
+
+.match-team {
+
+    text-align: center;
+
+    min-width: 170px;
+}
+
+.team-logo {
+
+    width: 105px;
+    height: 105px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.psv-logo {
+
+    background: #d00000;
+
+    color: white;
+
+    border: 7px solid white;
+
+    outline: 4px solid #d00000;
+}
+
+.ajax-logo {
+
+    background: #eeeeee;
+
+    color: #d00000;
+
+    border: 5px solid #d00000;
+}
+
+.match-team h3 {
+
+    font-size: 24px;
+
+    margin: 10px 0 5px;
+}
+
+.match-team p {
+
+    color: #999;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.versus {
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    color: #bbb;
+}
+
+.stadium-line {
+
+    text-align: center;
+
+    border-top: 1px solid #eee;
+
+    padding-top: 20px;
+
+    color: #555;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   NIEUWS
+========================= */
+
+.news-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.news-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.25s;
+}
+
+.news-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.news-image {
+
+    height: 190px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: 900;
+}
+
+.news-image-1 {
+
+    background:
+        linear-gradient(
+            rgba(190, 0, 0, 0.7),
+            rgba(100, 0, 0, 0.85)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.news-image-2 {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d00000,
+            #700000
+        );
+}
+
+.news-image-3 {
+
+    background:
+        linear-gradient(
+            135deg,
+            #222,
+            #d00000
+        );
+}
+
+.news-content {
+
+    padding: 25px;
+
+    text-align: left;
+}
+
+.news-content small {
+
+    color: #d00000;
+
+    font-weight: bold;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.news-content h3 {
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    margin: 12px 0;
+}
+
+.news-content p {
+
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.news-content a {
+
+    color: #d00000;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   STAND
+========================= */
+
+.table-container {
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th {
+
+    background: #d00000;
+
+    color: white;
+
+    padding: 18px;
+
+    text-align: left;
+}
+
+td {
+
+    padding: 18px;
+
+    border-bottom: 1px solid #eee;
+
+    font-weight: bold;
+}
+
+tr:last-child td {
+
+    border-bottom: none;
+}
+
+.psv-row {
+
+    background: #fff0f0;
+
+    color: #d00000;
+}
+
+
+/* =========================
+   PAGINA HERO
+========================= */
+
+.page-hero {
+
+    height: 560px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.stadium-page-hero {
+
+    background-image:
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+}
+
+.news-page-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(110, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+}
+
+
+/* SELECTIE HEADER */
+
+.selection-page-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(110, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+}
+
+.page-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(100, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.45)
+        );
+}
+
+.page-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    padding: 20px;
+}
+
+.page-hero-content p {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+.page-hero-content h1 {
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    margin: 10px 0;
+
+    font-weight: 900;
+}
+
+.page-hero-content span {
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   STADION
+========================= */
+
+.stadium-intro {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.stadium-text h3 {
+
+    font-size: 32px;
+
+    margin-top: 0;
+
+    color: #d00000;
+}
+
+.stadium-text p {
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.stadium-facts {
+
+    display: grid;
+
+    gap: 15px;
+}
+
+.fact {
+
+    background: white;
+
+    padding: 25px;
+
+    border-left: 5px solid #d00000;
+
+    border-radius: 10px;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fact strong {
+
+    display: block;
+
+    color: #d00000;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.fact span {
+
+    color: #666;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   STADION FEATURE
+========================= */
+
+.stadium-feature {
+
+    min-height: 550px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #171717;
+}
+
+.stadium-feature-image {
+
+    background-image:
+        linear-gradient(
+            rgba(120, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.stadium-feature-content {
+
+    color: white;
+
+    padding: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.stadium-feature-content > p:first-child {
+
+    color: #d00000;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.stadium-feature-content h2 {
+
+    font-size: 45px;
+
+    margin: 10px 0 25px;
+}
+
+.stadium-feature-content p {
+
+    color: #ccc;
+
+    line-height: 1.7;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   TOEKOMST
+========================= */
+
+.future-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 45px;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+
+    border-top: 6px solid #d00000;
+}
+
+.future-number {
+
+    font-size: 60px;
+
+    font-weight: 900;
+
+    color: #d00000;
+}
+
+.future-card h3 {
+
+    font-size: 28px;
+
+    margin-top: 0;
+}
+
+.future-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NIEUWS PAGINA
+========================= */
+
+.large-news-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.large-news-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.25s;
+}
+
+.large-news-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.large-news-image {
+
+    height: 260px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.transfer-image {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d00000,
+            #5e0000
+        );
+}
+
+.club-image {
+
+    background:
+        linear-gradient(
+            135deg,
+            #252525,
+            #d00000
+        );
+}
+
+.future-image {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d00000,
+            #222
+        );
+}
+
+.large-news-content {
+
+    padding: 30px;
+}
+
+.large-news-content small {
+
+    color: #d00000;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 11px;
+}
+
+.large-news-content h3 {
+
+    font-size: 26px;
+
+    line-height: 1.3;
+
+    margin: 12px 0;
+}
+
+.large-news-content p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    font-size: 16px;
+}
+
+.large-news-content a {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #d00000;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   NIEUWS BANNER
+========================= */
+
+.news-banner {
+
+    min-height: 400px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(150, 0, 0, 0.8),
+            rgba(80, 0, 0, 0.9)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.news-banner p {
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.news-banner h2 {
+
+    font-size: 45px;
+
+    margin: 15px 0 30px;
+}
+
+.news-banner a {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #d00000;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   SELECTIE PAGINA
+================================================== */
+
+.selection-section {
+    max-width: 1250px;
+}
+
+
+/* =========================
+   CATEGORIE
+========================= */
+
+.selection-category {
+
+    margin-bottom: 80px;
+}
+
+
+/* =========================
+   TITEL VAN POSITIE
+========================= */
+
+.selection-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+    border-bottom: 2px solid #ddd;
+
+    padding-bottom: 20px;
+}
+
+.position-icon {
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #d00000;
+
+    border-radius: 15px;
+
+    font-size: 30px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.selection-title p {
+
+    color: #d00000;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 5px;
+}
+
+.selection-title h2 {
+
+    font-size: 35px;
+
+    margin: 0;
+
+    font-weight: 900;
+}
+
+
+/* =========================
+   SPELERS
+========================= */
+
+.player-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.player-card {
+
+    position: relative;
+
+    min-height: 210px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7f7f7
+        );
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.11);
+
+    border-bottom: 5px solid #d00000;
+
+    transition: 0.25s;
+}
+
+.player-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -55px;
+    bottom: -65px;
+
+    background: #d00000;
+
+    opacity: 0.06;
+
+    border-radius: 50%;
+}
+
+.player-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   NUMMER
+========================= */
+
+.player-number {
+
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    color: #d00000;
+
+    opacity: 0.9;
+}
+
+
+/* =========================
+   POSITIE
+========================= */
+
+.player-position {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #d00000;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+}
+
+.player-card h3 {
+
+    margin: 0 35px 8px 0;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+}
+
+.player-card span {
+
+    color: #888;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #151515;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.footer-logo {
+
+    color: #d00000;
+
+    font-size: 40px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+footer p {
+
+    color: #bbb;
+
+    margin: 12px 0;
+}
+
+footer .copyright {
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .nav-links > a,
+    .dropdown > button {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .quick-info {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stadium-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .stadium-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .stadium-feature-image {
+        min-height: 400px;
+    }
+
+    .large-news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teams {
+        gap: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    .future-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links > a,
+    .dropdown > button {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .dropdown-menu {
+        top: 60px;
+    }
+
+    .hero {
+        height: 650px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .versus {
+        margin: 5px;
+    }
+
+    .match-top {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .page-hero {
+        height: 500px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .stadium-feature-content {
+        padding: 45px 25px;
+    }
+
+    .stadium-feature-content h2 {
+        font-size: 35px;
+    }
+
+    .news-banner h2 {
+        font-size: 32px;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-title h2 {
+        font-size: 28px;
+    }
+
+    .position-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+}
