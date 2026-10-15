@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 awayTeamName.textContent = match.awayTeam.name;
                 homeTeamLogo.textContent = match.homeTeam.tla;
                 awayTeamLogo.textContent = match.awayTeam.tla;
+                homeTeamLogo.classList.toggle("psv-logo", match.homeTeam.tla === "PSV");
+                homeTeamLogo.classList.toggle("ajax-logo", match.homeTeam.tla !== "PSV");
+                awayTeamLogo.classList.toggle("psv-logo", match.awayTeam.tla === "PSV");
+                awayTeamLogo.classList.toggle("ajax-logo", match.awayTeam.tla !== "PSV");
                 homeTeamLocation.textContent = match.homeTeam.tla === "PSV" ? "THUIS" : "UIT";
                 awayTeamLocation.textContent = match.awayTeam.tla === "PSV" ? "THUIS" : "UIT";
                 venue.textContent = "🏟️ " + (match.venue || "Locatie nog niet bekend");
