@@ -1,6 +1,17 @@
 {
   "competition": "Eredivisie",
-  "season": null,
-  "updatedAt": null,
-  "match": null
+  "season": "2026",
+  "updatedAt": "2026-10-15T08:32:46.875Z",
+  "match": {
+    "utcDate": "2026-10-17T14:30:00Z",
+    "homeTeam": {
+      "name": "Den Haag",
+      "tla": "ADO"
+    },
+    "awayTeam": {
+      "name": "PSV",
+      "tla": "PSV"
+    },
+    "venue": null
+  }
 }
