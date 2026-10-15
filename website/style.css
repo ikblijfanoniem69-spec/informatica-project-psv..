@@ -734,6 +734,17 @@ tr:last-child td {
     border-bottom: none;
 }
 
+.stand-update-status {
+
+    margin: 14px 0 0;
+
+    color: #666;
+
+    font-size: 13px;
+
+    text-align: right;
+}
+
 .psv-row {
 
     background: #fff0f0;

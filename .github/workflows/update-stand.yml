@@ -1,0 +1,38 @@
+name: Update Eredivisie standings
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Update standings database
+        run: node website/scripts/update-stand.mjs
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBAL_DATA_API_KEY }}
+
+      - name: Publish updated database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add website/stand.json
+          if git diff --cached --quiet; then
+            echo "Standings have not changed."
+          else
+            git commit -m "Update Eredivisie standings"
+            git push
+          fi
