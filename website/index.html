@@ -207,8 +207,8 @@
                 EREDIVISIE
             </span>
 
-            <span>
-                12 OKTOBER • 14:30
+            <span id="match-date">
+                Wedstrijd wordt geladen...
             </span>
 
         </div>
@@ -218,15 +218,15 @@
 
             <div class="match-team">
 
-                <div class="team-logo psv-logo">
+                <div id="home-team-logo" class="team-logo psv-logo">
                     PSV
                 </div>
 
-                <h3>
+                <h3 id="home-team-name">
                     PSV
                 </h3>
 
-                <p>
+                <p id="home-team-location">
                     THUIS
                 </p>
 
@@ -240,15 +240,15 @@
 
             <div class="match-team">
 
-                <div class="team-logo ajax-logo">
+                <div id="away-team-logo" class="team-logo ajax-logo">
                     AJAX
                 </div>
 
-                <h3>
+                <h3 id="away-team-name">
                     Ajax
                 </h3>
 
-                <p>
+                <p id="away-team-location">
                     UIT
                 </p>
 
@@ -257,11 +257,15 @@
         </div>
 
 
-        <div class="stadium-line">
+        <div id="match-venue" class="stadium-line">
             🏟️ Philips Stadion
         </div>
 
     </div>
+
+    <p id="match-update-status" class="stand-update-status" aria-live="polite">
+        Wedstrijdinformatie wordt automatisch bijgewerkt.
+    </p>
 
 </section>
 

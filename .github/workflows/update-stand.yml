@@ -25,14 +25,19 @@ jobs:
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBAL_DATA_API_KEY }}
 
+      - name: Update next PSV match
+        run: node website/scripts/update-match.mjs
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBAL_DATA_API_KEY }}
+
       - name: Publish updated database
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add website/stand.json
+          git add website/stand.json website/match.json
           if git diff --cached --quiet; then
-            echo "Standings have not changed."
+            echo "Standings and match information have not changed."
           else
-            git commit -m "Update Eredivisie standings"
+            git commit -m "Update Eredivisie website data"
             git push
           fi

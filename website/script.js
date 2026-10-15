@@ -7,6 +7,63 @@ document.addEventListener("DOMContentLoaded", function () {
     const standingsTable = document.querySelector("#standings-table");
     const standingsStatus = document.querySelector("#stand-update-status");
 
+    const matchDate = document.querySelector("#match-date");
+    const matchStatus = document.querySelector("#match-update-status");
+
+    if (matchDate && matchStatus) {
+        fetch("match.json?updated=" + Date.now(), { cache: "no-store" })
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("Wedstrijdinformatie kon niet worden geladen.");
+                }
+
+                return response.json();
+            })
+            .then(function (data) {
+                if (!data.match) {
+                    matchDate.textContent = "Nog geen wedstrijd bekend";
+                    matchStatus.textContent = "Er is geen aankomende Eredivisie-wedstrijd van PSV gevonden.";
+                    return;
+                }
+
+                const match = data.match;
+                const homeTeamName = document.querySelector("#home-team-name");
+                const awayTeamName = document.querySelector("#away-team-name");
+                const homeTeamLogo = document.querySelector("#home-team-logo");
+                const awayTeamLogo = document.querySelector("#away-team-logo");
+                const homeTeamLocation = document.querySelector("#home-team-location");
+                const awayTeamLocation = document.querySelector("#away-team-location");
+                const venue = document.querySelector("#match-venue");
+
+                homeTeamName.textContent = match.homeTeam.name;
+                awayTeamName.textContent = match.awayTeam.name;
+                homeTeamLogo.textContent = match.homeTeam.tla;
+                awayTeamLogo.textContent = match.awayTeam.tla;
+                homeTeamLocation.textContent = match.homeTeam.tla === "PSV" ? "THUIS" : "UIT";
+                awayTeamLocation.textContent = match.awayTeam.tla === "PSV" ? "THUIS" : "UIT";
+                venue.textContent = "🏟️ " + (match.venue || "Locatie nog niet bekend");
+                matchDate.textContent = new Intl.DateTimeFormat("nl-NL", {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    timeZone: "Europe/Amsterdam"
+                }).format(new Date(match.utcDate));
+                matchStatus.textContent = "Laatst bijgewerkt: " +
+                    new Intl.DateTimeFormat("nl-NL", {
+                        dateStyle: "medium",
+                        timeStyle: "short",
+                        timeZone: "Europe/Amsterdam"
+                    }).format(new Date(data.updatedAt)) +
+                    " • wordt automatisch elke 6 uur vernieuwd.";
+            })
+            .catch(function (error) {
+                matchDate.textContent = "Wedstrijdinformatie niet beschikbaar";
+                matchStatus.textContent = error.message;
+            });
+    }
+
     if (standingsTable && standingsStatus) {
         fetch("stand.json?updated=" + Date.now(), { cache: "no-store" })
             .then(function (response) {
