@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-16T13:03:47.872Z",
+  "updatedAt": "2026-10-16T18:55:51.111Z",
   "standings": [
     {
       "position": 1,
@@ -61,6 +61,14 @@
     },
     {
       "position": 8,
+      "name": "SC Heerenveen",
+      "shortName": "Heerenveen",
+      "tla": "HEE",
+      "playedGames": 9,
+      "points": 12
+    },
+    {
+      "position": 9,
       "name": "Go Ahead Eagles",
       "shortName": "Go Ahead",
       "tla": "GOA",
@@ -68,20 +76,12 @@
       "points": 11
     },
     {
-      "position": 9,
+      "position": 10,
       "name": "SBV Excelsior",
       "shortName": "Excelsior",
       "tla": "EXC",
-      "playedGames": 8,
+      "playedGames": 9,
       "points": 11
-    },
-    {
-      "position": 10,
-      "name": "SC Heerenveen",
-      "shortName": "Heerenveen",
-      "tla": "HEE",
-      "playedGames": 8,
-      "points": 9
     },
     {
       "position": 11,
