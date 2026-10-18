@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-18T15:56:36.264Z",
+  "updatedAt": "2026-10-18T20:51:56.994Z",
   "standings": [
     {
       "position": 1,
@@ -40,23 +40,23 @@
       "name": "FC Twente '65",
       "shortName": "Twente",
       "tla": "TWE",
-      "playedGames": 8,
+      "playedGames": 9,
       "points": 17
     },
     {
       "position": 6,
+      "name": "Fortuna Sittard",
+      "shortName": "Sittard",
+      "tla": "SIT",
+      "playedGames": 9,
+      "points": 15
+    },
+    {
+      "position": 7,
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
       "playedGames": 9,
-      "points": 14
-    },
-    {
-      "position": 7,
-      "name": "Fortuna Sittard",
-      "shortName": "Sittard",
-      "tla": "SIT",
-      "playedGames": 8,
       "points": 14
     },
     {
@@ -85,14 +85,22 @@
     },
     {
       "position": 11,
-      "name": "NEC",
-      "shortName": "NEC",
-      "tla": "NEC",
-      "playedGames": 8,
-      "points": 9
+      "name": "FC Utrecht",
+      "shortName": "Utrecht",
+      "tla": "UTR",
+      "playedGames": 9,
+      "points": 11
     },
     {
       "position": 12,
+      "name": "NEC",
+      "shortName": "NEC",
+      "tla": "NEC",
+      "playedGames": 9,
+      "points": 10
+    },
+    {
+      "position": 13,
       "name": "Sparta Rotterdam",
       "shortName": "Sparta",
       "tla": "SPA",
@@ -100,20 +108,12 @@
       "points": 9
     },
     {
-      "position": 13,
+      "position": 14,
       "name": "SC Cambuur-Leeuwarden",
       "shortName": "Cambuur",
       "tla": "CAM",
       "playedGames": 9,
       "points": 9
-    },
-    {
-      "position": 14,
-      "name": "FC Utrecht",
-      "shortName": "Utrecht",
-      "tla": "UTR",
-      "playedGames": 8,
-      "points": 8
     },
     {
       "position": 15,
