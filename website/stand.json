@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-18T04:42:39.243Z",
+  "updatedAt": "2026-10-18T11:18:17.639Z",
   "standings": [
     {
       "position": 1,
@@ -53,6 +53,14 @@
     },
     {
       "position": 7,
+      "name": "Go Ahead Eagles",
+      "shortName": "Go Ahead",
+      "tla": "GOA",
+      "playedGames": 9,
+      "points": 14
+    },
+    {
+      "position": 8,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
@@ -60,20 +68,12 @@
       "points": 14
     },
     {
-      "position": 8,
+      "position": 9,
       "name": "SC Heerenveen",
       "shortName": "Heerenveen",
       "tla": "HEE",
       "playedGames": 9,
       "points": 12
-    },
-    {
-      "position": 9,
-      "name": "Go Ahead Eagles",
-      "shortName": "Go Ahead",
-      "tla": "GOA",
-      "playedGames": 8,
-      "points": 11
     },
     {
       "position": 10,
@@ -136,7 +136,7 @@
       "name": "PEC Zwolle",
       "shortName": "Zwolle",
       "tla": "ZWO",
-      "playedGames": 8,
+      "playedGames": 9,
       "points": 4
     },
     {
