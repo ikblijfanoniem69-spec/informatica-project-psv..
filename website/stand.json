@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-18T11:18:17.639Z",
+  "updatedAt": "2026-10-18T15:56:36.264Z",
   "standings": [
     {
       "position": 1,
@@ -13,6 +13,14 @@
     },
     {
       "position": 2,
+      "name": "AZ",
+      "shortName": "AZ",
+      "tla": "AZ",
+      "playedGames": 9,
+      "points": 20
+    },
+    {
+      "position": 3,
       "name": "PSV",
       "shortName": "PSV",
       "tla": "PSV",
@@ -20,15 +28,15 @@
       "points": 19
     },
     {
-      "position": 3,
-      "name": "AZ",
-      "shortName": "AZ",
-      "tla": "AZ",
-      "playedGames": 8,
-      "points": 19
+      "position": 4,
+      "name": "AFC Ajax",
+      "shortName": "Ajax",
+      "tla": "AJA",
+      "playedGames": 9,
+      "points": 18
     },
     {
-      "position": 4,
+      "position": 5,
       "name": "FC Twente '65",
       "shortName": "Twente",
       "tla": "TWE",
@@ -36,31 +44,15 @@
       "points": 17
     },
     {
-      "position": 5,
-      "name": "AFC Ajax",
-      "shortName": "Ajax",
-      "tla": "AJA",
-      "playedGames": 8,
-      "points": 15
-    },
-    {
       "position": 6,
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
-      "playedGames": 8,
-      "points": 14
-    },
-    {
-      "position": 7,
-      "name": "Go Ahead Eagles",
-      "shortName": "Go Ahead",
-      "tla": "GOA",
       "playedGames": 9,
       "points": 14
     },
     {
-      "position": 8,
+      "position": 7,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
@@ -68,12 +60,20 @@
       "points": 14
     },
     {
-      "position": 9,
+      "position": 8,
       "name": "SC Heerenveen",
       "shortName": "Heerenveen",
       "tla": "HEE",
       "playedGames": 9,
       "points": 12
+    },
+    {
+      "position": 9,
+      "name": "Go Ahead Eagles",
+      "shortName": "Go Ahead",
+      "tla": "GOA",
+      "playedGames": 9,
+      "points": 11
     },
     {
       "position": 10,
@@ -104,8 +104,8 @@
       "name": "SC Cambuur-Leeuwarden",
       "shortName": "Cambuur",
       "tla": "CAM",
-      "playedGames": 8,
-      "points": 8
+      "playedGames": 9,
+      "points": 9
     },
     {
       "position": 14,
@@ -117,6 +117,14 @@
     },
     {
       "position": 15,
+      "name": "PEC Zwolle",
+      "shortName": "Zwolle",
+      "tla": "ZWO",
+      "playedGames": 9,
+      "points": 7
+    },
+    {
+      "position": 16,
       "name": "Telstar 1963",
       "shortName": "Telstar",
       "tla": "TEL",
@@ -124,20 +132,12 @@
       "points": 6
     },
     {
-      "position": 16,
+      "position": 17,
       "name": "ADO Den Haag",
       "shortName": "Den Haag",
       "tla": "ADO",
       "playedGames": 9,
       "points": 6
-    },
-    {
-      "position": 17,
-      "name": "PEC Zwolle",
-      "shortName": "Zwolle",
-      "tla": "ZWO",
-      "playedGames": 9,
-      "points": 4
     },
     {
       "position": 18,
