@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-24T16:02:23.092Z",
+  "updatedAt": "2026-10-24T20:56:30.335Z",
   "standings": [
     {
       "position": 1,
@@ -45,6 +45,14 @@
     },
     {
       "position": 6,
+      "name": "SC Heerenveen",
+      "shortName": "Heerenveen",
+      "tla": "HEE",
+      "playedGames": 10,
+      "points": 15
+    },
+    {
+      "position": 7,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
@@ -52,7 +60,7 @@
       "points": 15
     },
     {
-      "position": 7,
+      "position": 8,
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
@@ -60,7 +68,7 @@
       "points": 14
     },
     {
-      "position": 8,
+      "position": 9,
       "name": "Go Ahead Eagles",
       "shortName": "Go Ahead",
       "tla": "GOA",
@@ -68,15 +76,15 @@
       "points": 14
     },
     {
-      "position": 9,
-      "name": "SC Heerenveen",
-      "shortName": "Heerenveen",
-      "tla": "HEE",
-      "playedGames": 9,
+      "position": 10,
+      "name": "SC Cambuur-Leeuwarden",
+      "shortName": "Cambuur",
+      "tla": "CAM",
+      "playedGames": 10,
       "points": 12
     },
     {
-      "position": 10,
+      "position": 11,
       "name": "FC Utrecht",
       "shortName": "Utrecht",
       "tla": "UTR",
@@ -84,7 +92,7 @@
       "points": 12
     },
     {
-      "position": 11,
+      "position": 12,
       "name": "SBV Excelsior",
       "shortName": "Excelsior",
       "tla": "EXC",
@@ -92,7 +100,7 @@
       "points": 11
     },
     {
-      "position": 12,
+      "position": 13,
       "name": "NEC",
       "shortName": "NEC",
       "tla": "NEC",
@@ -100,18 +108,10 @@
       "points": 10
     },
     {
-      "position": 13,
+      "position": 14,
       "name": "Sparta Rotterdam",
       "shortName": "Sparta",
       "tla": "SPA",
-      "playedGames": 9,
-      "points": 9
-    },
-    {
-      "position": 14,
-      "name": "SC Cambuur-Leeuwarden",
-      "shortName": "Cambuur",
-      "tla": "CAM",
       "playedGames": 9,
       "points": 9
     },
@@ -136,7 +136,7 @@
       "name": "ADO Den Haag",
       "shortName": "Den Haag",
       "tla": "ADO",
-      "playedGames": 9,
+      "playedGames": 10,
       "points": 6
     },
     {
@@ -144,7 +144,7 @@
       "name": "Willem II Tilburg",
       "shortName": "Willem II",
       "tla": "WII",
-      "playedGames": 9,
+      "playedGames": 10,
       "points": 2
     }
   ]
