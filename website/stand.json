@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-25T16:31:04.331Z",
+  "updatedAt": "2026-10-25T20:56:27.755Z",
   "standings": [
     {
       "position": 1,
@@ -32,24 +32,24 @@
       "name": "AZ",
       "shortName": "AZ",
       "tla": "AZ",
-      "playedGames": 9,
+      "playedGames": 10,
       "points": 20
     },
     {
       "position": 5,
+      "name": "FC Twente '65",
+      "shortName": "Twente",
+      "tla": "TWE",
+      "playedGames": 10,
+      "points": 20
+    },
+    {
+      "position": 6,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
       "playedGames": 10,
       "points": 18
-    },
-    {
-      "position": 6,
-      "name": "FC Twente '65",
-      "shortName": "Twente",
-      "tla": "TWE",
-      "playedGames": 9,
-      "points": 17
     },
     {
       "position": 7,
