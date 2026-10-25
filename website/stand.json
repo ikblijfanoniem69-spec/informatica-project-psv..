@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-25T04:52:21.613Z",
+  "updatedAt": "2026-10-25T11:41:58.458Z",
   "standings": [
     {
       "position": 1,
@@ -45,18 +45,18 @@
     },
     {
       "position": 6,
+      "name": "Fortuna Sittard",
+      "shortName": "Sittard",
+      "tla": "SIT",
+      "playedGames": 10,
+      "points": 16
+    },
+    {
+      "position": 7,
       "name": "SC Heerenveen",
       "shortName": "Heerenveen",
       "tla": "HEE",
       "playedGames": 10,
-      "points": 15
-    },
-    {
-      "position": 7,
-      "name": "Fortuna Sittard",
-      "shortName": "Sittard",
-      "tla": "SIT",
-      "playedGames": 9,
       "points": 15
     },
     {
@@ -77,6 +77,14 @@
     },
     {
       "position": 10,
+      "name": "SBV Excelsior",
+      "shortName": "Excelsior",
+      "tla": "EXC",
+      "playedGames": 10,
+      "points": 12
+    },
+    {
+      "position": 11,
       "name": "SC Cambuur-Leeuwarden",
       "shortName": "Cambuur",
       "tla": "CAM",
@@ -84,20 +92,12 @@
       "points": 12
     },
     {
-      "position": 11,
+      "position": 12,
       "name": "FC Utrecht",
       "shortName": "Utrecht",
       "tla": "UTR",
       "playedGames": 10,
       "points": 12
-    },
-    {
-      "position": 12,
-      "name": "SBV Excelsior",
-      "shortName": "Excelsior",
-      "tla": "EXC",
-      "playedGames": 9,
-      "points": 11
     },
     {
       "position": 13,
