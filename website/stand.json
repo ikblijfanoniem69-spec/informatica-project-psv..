@@ -1,18 +1,34 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-25T11:41:58.458Z",
+  "updatedAt": "2026-10-25T16:31:04.331Z",
   "standings": [
     {
       "position": 1,
       "name": "Feyenoord Rotterdam",
       "shortName": "Feyenoord",
       "tla": "FEY",
-      "playedGames": 9,
-      "points": 23
+      "playedGames": 10,
+      "points": 24
     },
     {
       "position": 2,
+      "name": "AFC Ajax",
+      "shortName": "Ajax",
+      "tla": "AJA",
+      "playedGames": 10,
+      "points": 21
+    },
+    {
+      "position": 3,
+      "name": "PSV",
+      "shortName": "PSV",
+      "tla": "PSV",
+      "playedGames": 10,
+      "points": 20
+    },
+    {
+      "position": 4,
       "name": "AZ",
       "shortName": "AZ",
       "tla": "AZ",
@@ -20,36 +36,20 @@
       "points": 20
     },
     {
-      "position": 3,
-      "name": "PSV",
-      "shortName": "PSV",
-      "tla": "PSV",
-      "playedGames": 9,
-      "points": 19
-    },
-    {
-      "position": 4,
-      "name": "AFC Ajax",
-      "shortName": "Ajax",
-      "tla": "AJA",
-      "playedGames": 9,
+      "position": 5,
+      "name": "Fortuna Sittard",
+      "shortName": "Sittard",
+      "tla": "SIT",
+      "playedGames": 10,
       "points": 18
     },
     {
-      "position": 5,
+      "position": 6,
       "name": "FC Twente '65",
       "shortName": "Twente",
       "tla": "TWE",
       "playedGames": 9,
       "points": 17
-    },
-    {
-      "position": 6,
-      "name": "Fortuna Sittard",
-      "shortName": "Sittard",
-      "tla": "SIT",
-      "playedGames": 10,
-      "points": 16
     },
     {
       "position": 7,
@@ -64,8 +64,8 @@
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
-      "playedGames": 9,
-      "points": 14
+      "playedGames": 10,
+      "points": 15
     },
     {
       "position": 9,
@@ -77,14 +77,6 @@
     },
     {
       "position": 10,
-      "name": "SBV Excelsior",
-      "shortName": "Excelsior",
-      "tla": "EXC",
-      "playedGames": 10,
-      "points": 12
-    },
-    {
-      "position": 11,
       "name": "SC Cambuur-Leeuwarden",
       "shortName": "Cambuur",
       "tla": "CAM",
@@ -92,7 +84,7 @@
       "points": 12
     },
     {
-      "position": 12,
+      "position": 11,
       "name": "FC Utrecht",
       "shortName": "Utrecht",
       "tla": "UTR",
@@ -100,19 +92,27 @@
       "points": 12
     },
     {
-      "position": 13,
+      "position": 12,
       "name": "NEC",
       "shortName": "NEC",
       "tla": "NEC",
-      "playedGames": 9,
-      "points": 10
+      "playedGames": 10,
+      "points": 11
+    },
+    {
+      "position": 13,
+      "name": "SBV Excelsior",
+      "shortName": "Excelsior",
+      "tla": "EXC",
+      "playedGames": 10,
+      "points": 11
     },
     {
       "position": 14,
       "name": "Sparta Rotterdam",
       "shortName": "Sparta",
       "tla": "SPA",
-      "playedGames": 9,
+      "playedGames": 10,
       "points": 9
     },
     {
