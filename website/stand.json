@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-25T20:56:27.755Z",
+  "updatedAt": "2026-10-26T04:56:12.737Z",
   "standings": [
     {
       "position": 1,
@@ -29,17 +29,17 @@
     },
     {
       "position": 4,
-      "name": "AZ",
-      "shortName": "AZ",
-      "tla": "AZ",
+      "name": "FC Twente '65",
+      "shortName": "Twente",
+      "tla": "TWE",
       "playedGames": 10,
       "points": 20
     },
     {
       "position": 5,
-      "name": "FC Twente '65",
-      "shortName": "Twente",
-      "tla": "TWE",
+      "name": "AZ",
+      "shortName": "AZ",
+      "tla": "AZ",
       "playedGames": 10,
       "points": 20
     },
