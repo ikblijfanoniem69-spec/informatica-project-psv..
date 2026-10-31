@@ -1,16 +1,16 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-10-31T12:43:50.400Z",
+  "updatedAt": "2026-10-31T21:41:54.507Z",
   "match": {
-    "utcDate": "2026-10-31T17:45:00Z",
+    "utcDate": "2026-11-08T15:45:00Z",
     "homeTeam": {
-      "name": "PSV",
-      "tla": "PSV"
+      "name": "Cambuur",
+      "tla": "CAM"
     },
     "awayTeam": {
-      "name": "Willem II",
-      "tla": "WII"
+      "name": "PSV",
+      "tla": "PSV"
     },
     "venue": null
   }
