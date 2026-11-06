@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-06T06:56:51.790Z",
+  "updatedAt": "2026-11-06T19:29:13.043Z",
   "standings": [
     {
       "position": 1,
@@ -93,6 +93,14 @@
     },
     {
       "position": 12,
+      "name": "PEC Zwolle",
+      "shortName": "Zwolle",
+      "tla": "ZWO",
+      "playedGames": 12,
+      "points": 12
+    },
+    {
+      "position": 13,
       "name": "FC Utrecht",
       "shortName": "Utrecht",
       "tla": "UTR",
@@ -100,18 +108,10 @@
       "points": 12
     },
     {
-      "position": 13,
+      "position": 14,
       "name": "NEC",
       "shortName": "NEC",
       "tla": "NEC",
-      "playedGames": 11,
-      "points": 11
-    },
-    {
-      "position": 14,
-      "name": "PEC Zwolle",
-      "shortName": "Zwolle",
-      "tla": "ZWO",
       "playedGames": 11,
       "points": 11
     },
@@ -144,8 +144,8 @@
       "name": "Willem II Tilburg",
       "shortName": "Willem II",
       "tla": "WII",
-      "playedGames": 11,
-      "points": 2
+      "playedGames": 12,
+      "points": 3
     }
   ]
 }
