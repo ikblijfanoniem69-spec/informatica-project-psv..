@@ -1,14 +1,14 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-08T06:14:08.828Z",
+  "updatedAt": "2026-11-08T13:37:57.231Z",
   "standings": [
     {
       "position": 1,
       "name": "Feyenoord Rotterdam",
       "shortName": "Feyenoord",
       "tla": "FEY",
-      "playedGames": 11,
+      "playedGames": 12,
       "points": 25
     },
     {
@@ -16,11 +16,19 @@
       "name": "AFC Ajax",
       "shortName": "Ajax",
       "tla": "AJA",
-      "playedGames": 11,
-      "points": 24
+      "playedGames": 12,
+      "points": 25
     },
     {
       "position": 3,
+      "name": "FC Twente '65",
+      "shortName": "Twente",
+      "tla": "TWE",
+      "playedGames": 12,
+      "points": 24
+    },
+    {
+      "position": 4,
       "name": "PSV",
       "shortName": "PSV",
       "tla": "PSV",
@@ -28,15 +36,15 @@
       "points": 23
     },
     {
-      "position": 4,
-      "name": "FC Twente '65",
-      "shortName": "Twente",
-      "tla": "TWE",
-      "playedGames": 11,
-      "points": 23
+      "position": 5,
+      "name": "SC Heerenveen",
+      "shortName": "Heerenveen",
+      "tla": "HEE",
+      "playedGames": 12,
+      "points": 21
     },
     {
-      "position": 5,
+      "position": 6,
       "name": "AZ",
       "shortName": "AZ",
       "tla": "AZ",
@@ -44,20 +52,12 @@
       "points": 20
     },
     {
-      "position": 6,
+      "position": 7,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
       "playedGames": 12,
       "points": 20
-    },
-    {
-      "position": 7,
-      "name": "SC Heerenveen",
-      "shortName": "Heerenveen",
-      "tla": "HEE",
-      "playedGames": 11,
-      "points": 18
     },
     {
       "position": 8,
