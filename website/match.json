@@ -1,12 +1,12 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-08T13:37:58.145Z",
+  "updatedAt": "2026-11-08T22:13:58.280Z",
   "match": {
-    "utcDate": "2026-11-08T15:45:00Z",
+    "utcDate": "2026-11-21T15:30:00Z",
     "homeTeam": {
-      "name": "Cambuur",
-      "tla": "CAM"
+      "name": "NEC",
+      "tla": "NEC"
     },
     "awayTeam": {
       "name": "PSV",
