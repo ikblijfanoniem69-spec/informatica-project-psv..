@@ -458,7 +458,115 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const dataUrl = "https://ikblijfanoniem69-spec.github.io/informatica-project-psv../website/";
+    const formatDate = function (date, options) {
+        return new Intl.DateTimeFormat("nl-NL", {
+            ...options,
+            timeZone: "Europe/Amsterdam"
+        }).format(new Date(date));
+    };
+
+    fetch(dataUrl + "stand.json?updated=" + Date.now(), { cache: "no-store" })
+        .then(function (response) {
+            if (!response.ok) {
+                throw new Error("Stand kon niet worden geladen.");
+            }
+
+            return response.json();
+        })
+        .then(function (data) {
+            const table = document.querySelector("#standings-table");
+            const status = document.querySelector("#stand-update-status");
+
+            if (!Array.isArray(data.standings) || data.standings.length === 0) {
+                throw new Error("Er is nog geen stand beschikbaar.");
+            }
+
+            table.replaceChildren();
+
+            data.standings.forEach(function (team) {
+                const row = document.createElement("tr");
+
+                if (team.tla === "PSV" || team.shortName === "PSV" || team.name === "PSV") {
+                    row.classList.add("psv-row");
+                }
+
+                [team.position, team.shortName || team.name, team.playedGames, team.points]
+                    .forEach(function (value) {
+                        const cell = document.createElement("td");
+                        cell.textContent = value;
+                        row.appendChild(cell);
+                    });
+
+                table.appendChild(row);
+            });
+
+            status.textContent = "Laatst bijgewerkt: " +
+                formatDate(data.updatedAt, { dateStyle: "medium", timeStyle: "short" }) +
+                " • wordt automatisch elke 6 uur vernieuwd.";
+        })
+        .catch(function (error) {
+            document.querySelector("#standings-table").innerHTML =
+                '<tr><td colspan="4">De stand is tijdelijk niet beschikbaar.</td></tr>';
+            document.querySelector("#stand-update-status").textContent = error.message;
+        });
+
+    fetch(dataUrl + "match.json?updated=" + Date.now(), { cache: "no-store" })
+        .then(function (response) {
+            if (!response.ok) {
+                throw new Error("Wedstrijdinformatie kon niet worden geladen.");
+            }
+
+            return response.json();
+        })
+        .then(function (data) {
+            const matchDate = document.querySelector("#match-date");
+            const matchStatus = document.querySelector("#match-update-status");
+
+            if (!data.match) {
+                matchDate.textContent = "Nog geen wedstrijd bekend";
+                matchStatus.textContent = "Er is geen aankomende Eredivisie-wedstrijd van PSV gevonden.";
+                return;
+            }
+
+            const match = data.match;
+            const homeTeamLogo = document.querySelector("#home-team-logo");
+            const awayTeamLogo = document.querySelector("#away-team-logo");
+
+            document.querySelector("#home-team-name").textContent = match.homeTeam.name;
+            document.querySelector("#away-team-name").textContent = match.awayTeam.name;
+            homeTeamLogo.textContent = match.homeTeam.tla;
+            awayTeamLogo.textContent = match.awayTeam.tla;
+            homeTeamLogo.classList.toggle("psv-logo", match.homeTeam.tla === "PSV");
+            homeTeamLogo.classList.toggle("ajax-logo", match.homeTeam.tla !== "PSV");
+            awayTeamLogo.classList.toggle("psv-logo", match.awayTeam.tla === "PSV");
+            awayTeamLogo.classList.toggle("ajax-logo", match.awayTeam.tla !== "PSV");
+            document.querySelector("#home-team-location").textContent =
+                match.homeTeam.tla === "PSV" ? "THUIS" : "UIT";
+            document.querySelector("#away-team-location").textContent =
+                match.awayTeam.tla === "PSV" ? "THUIS" : "UIT";
+            document.querySelector("#match-venue").textContent =
+                "🏟️ " + (match.venue || "Locatie nog niet bekend");
+            matchDate.textContent = formatDate(match.utcDate, {
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                hour: "2-digit",
+                minute: "2-digit"
+            });
+            matchStatus.textContent = "Laatst bijgewerkt: " +
+                formatDate(data.updatedAt, { dateStyle: "medium", timeStyle: "short" }) +
+                " • wordt automatisch elke 6 uur vernieuwd.";
+        })
+        .catch(function (error) {
+            document.querySelector("#match-date").textContent =
+                "Wedstrijdinformatie niet beschikbaar";
+            document.querySelector("#match-update-status").textContent = error.message;
+        });
+});
+</script>
 
 </body>
 </html>
