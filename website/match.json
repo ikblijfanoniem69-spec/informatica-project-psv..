@@ -1,16 +1,16 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-21T07:20:49.971Z",
+  "updatedAt": "2026-11-21T19:25:11.916Z",
   "match": {
-    "utcDate": "2026-11-21T15:30:00Z",
+    "utcDate": "2026-11-28T17:45:00Z",
     "homeTeam": {
-      "name": "NEC",
-      "tla": "NEC"
-    },
-    "awayTeam": {
       "name": "PSV",
       "tla": "PSV"
+    },
+    "awayTeam": {
+      "name": "Go Ahead",
+      "tla": "GOA"
     },
     "venue": null
   }
