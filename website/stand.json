@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-21T19:25:11.041Z",
+  "updatedAt": "2026-11-22T07:00:29.530Z",
   "standings": [
     {
       "position": 1,
@@ -37,19 +37,19 @@
     },
     {
       "position": 5,
+      "name": "SC Heerenveen",
+      "shortName": "Heerenveen",
+      "tla": "HEE",
+      "playedGames": 13,
+      "points": 24
+    },
+    {
+      "position": 6,
       "name": "AZ",
       "shortName": "AZ",
       "tla": "AZ",
       "playedGames": 12,
       "points": 23
-    },
-    {
-      "position": 6,
-      "name": "SC Heerenveen",
-      "shortName": "Heerenveen",
-      "tla": "HEE",
-      "playedGames": 12,
-      "points": 21
     },
     {
       "position": 7,
@@ -80,11 +80,19 @@
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 15
     },
     {
       "position": 11,
+      "name": "PEC Zwolle",
+      "shortName": "Zwolle",
+      "tla": "ZWO",
+      "playedGames": 13,
+      "points": 15
+    },
+    {
+      "position": 12,
       "name": "NEC",
       "shortName": "NEC",
       "tla": "NEC",
@@ -92,7 +100,7 @@
       "points": 14
     },
     {
-      "position": 12,
+      "position": 13,
       "name": "SBV Excelsior",
       "shortName": "Excelsior",
       "tla": "EXC",
@@ -100,18 +108,10 @@
       "points": 14
     },
     {
-      "position": 13,
+      "position": 14,
       "name": "Sparta Rotterdam",
       "shortName": "Sparta",
       "tla": "SPA",
-      "playedGames": 12,
-      "points": 12
-    },
-    {
-      "position": 14,
-      "name": "PEC Zwolle",
-      "shortName": "Zwolle",
-      "tla": "ZWO",
       "playedGames": 12,
       "points": 12
     },
@@ -128,7 +128,7 @@
       "name": "Telstar 1963",
       "shortName": "Telstar",
       "tla": "TEL",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 10
     },
     {
