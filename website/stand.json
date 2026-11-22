@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-22T07:00:29.530Z",
+  "updatedAt": "2026-11-22T19:47:36.783Z",
   "standings": [
     {
       "position": 1,
@@ -13,6 +13,30 @@
     },
     {
       "position": 2,
+      "name": "AFC Ajax",
+      "shortName": "Ajax",
+      "tla": "AJA",
+      "playedGames": 13,
+      "points": 28
+    },
+    {
+      "position": 3,
+      "name": "FC Twente '65",
+      "shortName": "Twente",
+      "tla": "TWE",
+      "playedGames": 13,
+      "points": 27
+    },
+    {
+      "position": 4,
+      "name": "AZ",
+      "shortName": "AZ",
+      "tla": "AZ",
+      "playedGames": 13,
+      "points": 26
+    },
+    {
+      "position": 5,
       "name": "Feyenoord Rotterdam",
       "shortName": "Feyenoord",
       "tla": "FEY",
@@ -20,23 +44,7 @@
       "points": 25
     },
     {
-      "position": 3,
-      "name": "AFC Ajax",
-      "shortName": "Ajax",
-      "tla": "AJA",
-      "playedGames": 12,
-      "points": 25
-    },
-    {
-      "position": 4,
-      "name": "FC Twente '65",
-      "shortName": "Twente",
-      "tla": "TWE",
-      "playedGames": 12,
-      "points": 24
-    },
-    {
-      "position": 5,
+      "position": 6,
       "name": "SC Heerenveen",
       "shortName": "Heerenveen",
       "tla": "HEE",
@@ -44,20 +52,12 @@
       "points": 24
     },
     {
-      "position": 6,
-      "name": "AZ",
-      "shortName": "AZ",
-      "tla": "AZ",
-      "playedGames": 12,
-      "points": 23
-    },
-    {
       "position": 7,
       "name": "Fortuna Sittard",
       "shortName": "Sittard",
       "tla": "SIT",
-      "playedGames": 12,
-      "points": 20
+      "playedGames": 13,
+      "points": 23
     },
     {
       "position": 8,
@@ -72,7 +72,7 @@
       "name": "Go Ahead Eagles",
       "shortName": "Go Ahead",
       "tla": "GOA",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 17
     },
     {
@@ -112,7 +112,7 @@
       "name": "Sparta Rotterdam",
       "shortName": "Sparta",
       "tla": "SPA",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 12
     },
     {
@@ -136,7 +136,7 @@
       "name": "ADO Den Haag",
       "shortName": "Den Haag",
       "tla": "ADO",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 9
     },
     {
@@ -144,7 +144,7 @@
       "name": "Willem II Tilburg",
       "shortName": "Willem II",
       "tla": "WII",
-      "playedGames": 12,
+      "playedGames": 13,
       "points": 3
     }
   ]
