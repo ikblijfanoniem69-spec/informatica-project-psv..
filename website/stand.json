@@ -1,7 +1,7 @@
 {
   "competition": "Eredivisie",
   "season": "2026",
-  "updatedAt": "2026-11-27T08:44:37.800Z",
+  "updatedAt": "2026-11-27T21:25:51.449Z",
   "standings": [
     {
       "position": 1,
@@ -80,8 +80,8 @@
       "name": "FC Groningen",
       "shortName": "Groningen",
       "tla": "GRO",
-      "playedGames": 13,
-      "points": 15
+      "playedGames": 14,
+      "points": 16
     },
     {
       "position": 11,
@@ -144,8 +144,8 @@
       "name": "Willem II Tilburg",
       "shortName": "Willem II",
       "tla": "WII",
-      "playedGames": 13,
-      "points": 3
+      "playedGames": 14,
+      "points": 4
     }
   ]
 }
